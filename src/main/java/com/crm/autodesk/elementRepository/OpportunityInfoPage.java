@@ -1,0 +1,31 @@
+package com.crm.autodesk.elementRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class OpportunityInfoPage  {
+	
+	public OpportunityInfoPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+
+	@FindBy(xpath="//span[@class='dvHeaderText']")
+	private WebElement opportunityInfo;
+
+
+	public WebElement getOpportunityInfo() {
+		return opportunityInfo;
+	}
+	
+	public String oppInfo()
+	{
+		return opportunityInfo.getText();
+	}
+	
+	
+
+}

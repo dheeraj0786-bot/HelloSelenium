@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+  <test thread-count="2" name="Test" parallel="tests">
+    <classes>
+      <class name="com.crm.autodesk.opportunityTest.TC_22_ClickOnSaveAndAllTheFillsAreSaveOrNot"/>
+    </classes>
+    </test> <!-- Test -->
+  
+  
+  <test thread-count="2" name="Test2" parallel="tests">  
+    <classes>
+      <class name="com.crm.autodesk.opportunityTest.TC_23CreateOpportunityAndVerify"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
